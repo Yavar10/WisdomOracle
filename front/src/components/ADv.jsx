@@ -15,7 +15,7 @@ export default function ADv() {
       setGlowEffect(true);
 
       // Optional delay for effect
-      await new Promise((res) => setTimeout(res, 1200));
+      await new Promise((res) => setTimeout(res, 120));
 
       const res = await axios.get("https://api.adviceslip.com/advice");
       setAdvice(res.data.slip.advice);
